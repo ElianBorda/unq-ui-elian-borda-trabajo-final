@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    /* Font size in em */
+    font-size: 1em;
+}
+
+.ce {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    background-color: #fff;
+    width: 100%;
+    height: 3.5em;
+    /* box shadow in bottom */
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.1);
+}
+
+.logo-anniversary {
+    width: 70%;
+    height: 70%;
+    filter: brightness(0) invert(0);
+}
+
+.temp-body {
+    width: 100%;
+    height: calc(100vh - 3.5em);
+}
+.video-preguntados {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dark-overlay {
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 3.5em);
+  background: rgba(0, 0, 0, 0.5); 
+  pointer-events: none; 
+}
+
+.difficulty-card {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.5);
+}
+
+.tilt-warp-font {
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "XROT" 0,
+    "YROT" 0;
+}
+
+.title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+.description-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.btn-preguntados {
+  all: unset;
+  font-size: 0.5em;
+  color: rgb(36, 36, 36);
+  background-color: #fff;
+  border-radius: 1em;
+  height: auto;
+  padding: 0.2em 0;
+  width: 7em;
+  text-shadow: none;
+}
+
+
+.btn-preguntados:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.gp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.gp2 {
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+.container-btn {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-question {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+}
+
+.card-question {
+  display: flex;
+  width: 35em;
+  height: 30em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  gap: 3em;
+  flex-wrap: wrap;
+  border-radius: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-question {
+  width: 11em;
+  padding: 0.2em;
+  font-size: 1em;
+  border: solid 0.1em #000;
+}
+
+.question {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 3em;
+  padding: 2em;
+}
+
+.card-endgame {
+  display: flex;
+  width: 30em;
+  height: 15em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  gap: 3em;
+  flex-wrap: wrap;
+  border-radius: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-endgame2 {
+  display: flex;
+  width: 30em;
+  height: 10em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2em;
+  gap: 2em;
+  flex-wrap: wrap;
+  border-radius: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1205px) {
+  .content-question {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-question {
+    display: flex;
+    width: 35em;
+    height: 15em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+    gap: 3em;
+    flex-wrap: wrap;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+}
