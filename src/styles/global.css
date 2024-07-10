@@ -218,3 +218,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
 }
+
+.true-answer {
+  background-color: rgb(2, 189, 2);
+  color: #fff;
+}
+
+.false-answer {
+  background-color: rgb(211, 0, 0);
+  color: #fff;
+}
+

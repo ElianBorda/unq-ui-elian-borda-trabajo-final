@@ -15,7 +15,7 @@ const App = () => {
             <NavBarPreguntados/>
             <QuestionsProvider>
               <PointProvider>
-                <Routes>
+                <Routes>  
                   <Route path="/" element={<LandingPage/>}/>
                   <Route path="/question/:difficulty" element={<QuestionPage/>}>
                     <Route path=":numquestion" element={<QuestionSinglePage/>}/> 
